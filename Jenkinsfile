@@ -16,12 +16,13 @@ pipeline {
         string(name: 'appVersion', defaultValue: '1.0.0', description: 'What is the application version?')
     }
     stages {
-        stage('Print the Version') {
-            steps {
-                sh "echo Application Version:${appVersion}"
-                }                
+        stage ('print the version') {
+            steps{
+                script{
+                    echo "Application version: ${params.appVersion}"
+                }
+            }
         }
-        
         // stage('Init') {
         //     steps {
         //         sh """
