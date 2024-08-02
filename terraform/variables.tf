@@ -18,3 +18,7 @@ variable "common_tags" {
 variable "zone_name" {
   default = "puneeth.cloud"
 }
+
+variable "app_version" {
+  
+}
