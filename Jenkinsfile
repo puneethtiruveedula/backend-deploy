@@ -18,11 +18,10 @@ pipeline {
     stages {
         stage('Print the Version') {
             steps {
-                script {
-                  sh "echo Application Version:${appVersion}"
+                sh "echo Application Version:${appVersion}"
                 }                
-            }
         }
+        
         // stage('Init') {
         //     steps {
         //         sh """
